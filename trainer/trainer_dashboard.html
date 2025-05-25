@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trainer Dashboard</title>
+    <link rel="stylesheet" href="style_index.css">
+</head>
+
+<body data-page="trainer_dashboard">
+    <nav class="navbar">
+        <div class="logo">
+            <img src="../images/Logo.png" alt="Logo">
+            Active Heaven
+        </div>
+        <div class="user-info">
+            <div class="profile-menu">
+                <span id="user-name"></span>
+                <button id="logout-btn">Log Out</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <h1>Trainer Dashboard</h1>
+
+        <!-- Trainer Schedule Section -->
+        <h2>Your Schedule</h2>
+        <table id="scheduleTable">
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Schedule Data Will Be Populated Dynamically -->
+            </tbody>
+        </table>
+
+        <!-- 📌 Trainer Feedback Section -->
+        <h2>Customer Feedback</h2>
+        <div class="feedback-container">
+            <table id="feedbackTable">
+                <thead>
+                    <tr>
+                        <th>Feedback</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Feedback Data Will Be Populated Dynamically -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>

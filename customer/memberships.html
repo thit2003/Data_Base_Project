@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Active Heaven - Sports Facility Booking</title>
+    <link rel="stylesheet" href="style_index.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="../images/Logo.png" alt="Active Heaven Logo" class="logo" />
+            <span class="website-name">Active Heaven</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="memberships.html">Memberships</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="nav-buttons">
+            <!-- Shown when the user is not logged in -->
+            <a href="login.html"><button id="login-btn">Log In</button></a>
+            <a href="signup.html"><button id="signup-btn">Sign Up</button></a>
+        </div>
+        <div class="nav-profile" style="display: none;">
+            <div class="profile-menu">
+                <span id="user-name"></span>
+                <button id="logout-btn">Log Out</button>
+            </div>
+        </div> 
+    </nav>
+
+    <div class="memberships">
+        <h1>Membership Plans</h1>
+
+        <div class="membership-plan">
+            <img src="../images/monthly-plan.jpg" alt="Monthly Plan">
+            <div class="details">
+                <h2>Monthly Membership Plan</h2>
+                <p><strong>฿2000 per month</strong></p>
+                <ul>
+                    <li>24/7 Access to Facilities</li>
+                    <li>Trainer Support</li>
+                    <li>Membership Perks</li>
+                    <li>Facility Discount</li>
+                </ul>
+                <button>Join Monthly Plan</button>
+            </div>
+        </div>
+        
+        <div class="membership-plan">
+            <img src="../images/yearly-plan.png" alt="Yearly Plan">
+            <div class="details">
+                <h2>Yearly Membership Plan</h2>
+                <p><strong>฿20000 per year</strong></p>
+                <ul>
+                    <li>24/7 Access to Facilities</li>
+                    <li>Trainer Support</li>
+                    <li>Membership Perks</li>
+                    <li>Facility Discount</li>
+                </ul>
+                <button>Join Yearly Plan</button>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="trainers">
+        <div class="time_table">
+            <a href="schedule.html">
+                <button>View Trainers' Schedule</button>
+            </a>
+        </div>
+        <h1>Our Trainers</h1>
+        <div class="trainer-container">
+            <div class="trainer-card">
+                <img src="../images/trainer1.jpg" alt="Trainer One">
+                <h3>Trainer One</h3>
+                <p>Fitness and Body</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="trainer-card">
+                <img src="../images/trainer2.png" alt="Trainer Two">
+                <h3>Trainer Two</h3>
+                <p>Fitness and Body</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="trainer-card">
+                <img src="../images/trainer3.jpg" alt="Trainer Three">
+                <h3>Trainer Three</h3>
+                <p>Fitness and Body</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Active Heaven. All Rights Reserved.</p>
+            <ul class="footer-links">
+                <li><a href="index.html" title="Home page of Active Heaven">Home</a></li>
+                <li><a href="about.html" title="Learn more about Active Heaven">About Us</a></li>
+                <li><a href="memberships.html" title="Discover our Membership Plans">Memberships</a></li>
+                <li><a href="contact.html" title="Get in Touch with Us">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

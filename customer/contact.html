@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Active Heaven - Sports Facility Booking</title>
+    <link rel="stylesheet" href="style_index.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="../images/Logo.png" alt="Active Heaven Logo" class="logo" />
+            <span class="website-name">Active Heaven</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="memberships.html">Memberships</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="nav-buttons">
+            <!-- Shown when the user is not logged in -->
+            <a href="login.html"><button id="login-btn">Log In</button></a>
+            <a href="signup.html"><button id="signup-btn">Sign Up</button></a>
+        </div>
+        <div class="nav-profile" style="display: none;">
+            <div class="profile-menu">
+                <span id="user-name"></span>
+                <button id="logout-btn">Log Out</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2 class="help-title">How can we help?</h2>
+        <p class="help-description">Seek for the help you desire</p>
+
+        <div class="contact-us">
+            <!-- Phone Contact -->
+            <div class="contact-option">
+                <i class="fa-solid fa-phone contact-icon"></i>
+                <p><strong>Phone Number:</strong> 0659895434</p>
+            </div>
+
+            <!-- Email Contact -->
+            <div class="contact-option">
+                <i class="fa-solid fa-envelope contact-icon"></i>
+                <p><strong>Email:</strong> activeheaven@gmail.com</p>
+            </div>
+
+            <!-- Line Contact -->
+            <div class="contact-option">
+                <i class="fa-brands fa-line  contact-icon"></i>
+                <p><strong>Line:</strong> activeheaven</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Feedback Section -->
+    <div class="feedback-section">
+        <h3>We Value Your Feedback!</h3>
+        <form id="feedback-form">
+            <label for="feedback-message">Your Feedback:</label>
+            <textarea id="feedback-message" name="message" placeholder="Write your feedback here..."
+                required></textarea>
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Active Heaven. All Rights Reserved.</p>
+            <ul class="footer-links">
+                <li><a href="about.html" title="Learn more about Active Heaven">About Us</a></li>
+                <li><a href="facilities.html" title="Explore our Facilities">Facilities</a></li>
+                <li><a href="memberships.html" title="Discover our Membership Plans">Memberships</a></li>
+                <li><a href="contact.html" title="Get in Touch with Us">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,334 @@
+/* Importing Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 20px;
+    margin-left: 80px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: beige;
+    font-size: 1rem; /* Base font size */
+    line-height: 1.6;
+}
+
+button, .back-btn, .download-btn {
+    background-color: #6a0e31;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover, .back-btn:hover, .download-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #7a1b45; /* Consistent hover color */
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Nav Bar */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    /* Adjust the size as needed */
+    height: auto;
+    object-fit: contain;
+    margin-right: 10px;
+    /* Adds spacing between the logo and website name */
+}
+
+.website-name {
+    /* Adjust the font size */
+    font-weight: bold;
+    color: #6a0e31;
+    /* Adjust the color */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #6a0e31;
+}
+
+/* Active state for navbar links */
+.nav-links a.active {
+    font-weight: bold;
+    color: #6a0e31;
+    text-decoration: underline;
+}
+
+.nav-buttons {
+    display: flex; /* Ensure buttons are aligned horizontally */
+    gap: 10px; /* Add spacing between buttons */
+}
+
+.nav-buttons a {
+    text-decoration: none; /* Remove underline for links wrapping buttons */
+}
+
+/* Navbar Profile Section */
+.nav-profile {
+    display: none; /* Hidden by default */
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    color: #6a0e31;
+}
+
+/* Form container */
+form {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form labels */
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Form inputs and select dropdowns */
+form input,
+form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease;
+}
+
+/* Focused input styling */
+form input:focus,
+form select:focus {
+    outline: none;
+    border-color: #6a0e31;
+    background-color: #fff;
+}
+
+/* Required and invalid fields */
+form input:required {
+    border-left: 3px solid #6a0e31;
+}
+
+form input:invalid {
+    border-left: 3px solid red;
+}
+
+/* Form button */
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #6a0e31;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+    background-color: #861a43;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+form button:active {
+    transform: scale(0.98);
+}
+
+/* Placeholder styling */
+form input::placeholder {
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+/* Error messages */
+.form-error {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: -15px;
+    margin-bottom: 15px;
+}
+
+.navbar {
+    background-color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #600;
+    white-space: nowrap; /* Prevent text from breaking into two lines */
+}
+.logo img {
+    height: 40px; /* Adjust as needed */
+    margin-right: 10px;
+    vertical-align: middle; /* Ensures vertical alignment */
+}
+
+.logo img {
+    height: 30px;
+    margin-right: 10px;
+}
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* 📌 Trainer Dashboard Styling */
+.main-content {
+    padding: 20px;
+    font-family: "Poppins", sans-serif;
+    max-width: 1200px; /* Set a comfortable max width */
+    width: 90%; /* Make sure it expands on larger screens */
+    margin: auto;
+}
+
+/* 📌 General Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    min-width: 800px; /* Ensures table is wide enough */
+}
+
+/* 📌 Schedule Table Styling */
+#scheduleTable,
+#feedbackTable {
+    width: 100%;
+    max-width: 1000px; /* Set a max width */
+    margin: auto; /* Center the tables */
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 📌 Table Headings */
+#scheduleTable th,
+#feedbackTable th {
+    padding: 16px;
+    text-align: center;
+    background-color: #6A0E31;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* 📌 Table Rows */
+#scheduleTable td,
+#feedbackTable td {
+    padding: 16px;
+    text-align: center;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #ddd;
+    background-color: beige;
+}
+
+/* 📌 Highlight Scheduled Days */
+#scheduleTable td.scheduled {
+    color: green;
+    font-weight: bold;
+}
+
+/* 📌 Highlight Off Days */
+#scheduleTable td.off-day {
+    color: red;
+    font-weight: bold;
+}
+
+/* 📌 Responsive Table */
+@media (max-width: 768px) {
+    .main-content {
+        width: 100%;
+        padding: 10px;
+    }
+
+    table {
+        min-width: 100%;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}

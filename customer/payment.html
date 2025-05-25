@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Active Heaven - Sports Facility Booking</title>
+    <link rel="stylesheet" href="style_index.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="../images/Logo.png" alt="Active Heaven Logo" class="logo" />
+            <span class="website-name">Active Heaven</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#facilities">Facilities</a></li>
+            <li><a href="memberships.html">Memberships</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="payment-container">
+        <h1 class="page-title">Payment Info</h1>
+        <div class="payment-wrapper">
+            <!-- Left Section: PromptPay QR -->
+            <div class="payment-left">
+                <h2 class="section-title">PromptPay QR</h2>
+                <p class="instructions">Scan and Pay:</p>
+                <div class="promptpay-logo">
+                    <img src="../images/promptpay-logo.jpg" alt="PromptPay Logo">
+                </div>
+                <div class="qr-container">
+                    <img src="../images/QR.jpg" alt="PromptPay QR Code">
+                </div>
+                <button class="pay-btn" id="confirm-payment-btn">
+                    Confirm Payment
+                </button>
+                <p class="extra-info">สแกน QR ด้วยแอป PromptPay QR ที่รองรับ</p>
+            </div>
+    
+            <!-- Right Section: Transaction Details -->
+            <div class="payment-right">
+                <h3 class="section-title">Total Amount</h3>
+                <p class="amount" id="amount">฿0</p>
+                <h4>Transaction Summary</h4>
+                <p><strong>Invoice Amount:</strong> ฿ <span id="invoice-amount">0</span></p>
+                <h4>Payment Details</h4>
+                <a href="booking_form.html">
+                    <button class="back-btn">Back to Booking-form</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+
+</html>

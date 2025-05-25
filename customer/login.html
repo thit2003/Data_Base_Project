@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="style_index.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="../images/Logo.png" alt="Logo" class="logo">
+            <span class="website-name">Active Heaven</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="memberships.html">Memberships</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Log In Form -->
+    <div class="form-container">
+        <h1>Log In</h1>
+        <form id="login-form">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+        
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter your password" required>
+        
+            <button type="submit">Log In</button>
+        </form>
+        <p class="form-redirect">
+            Don't have an account? <a href="signup.html">Sign up here</a>.
+        </p>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

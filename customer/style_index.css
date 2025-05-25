@@ -1,0 +1,833 @@
+/* Importing Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin: 20px 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: beige;
+    font-size: 1rem; /* Base font size */
+    line-height: 1.6;
+}
+
+button, .back-btn {
+    background-color: #6a0e31;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover, .back-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #7a1b45; /* Consistent hover color */
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Nav Bar */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    /* Adjust the size as needed */
+    height: auto;
+    object-fit: contain;
+    margin-right: 10px;
+    /* Adds spacing between the logo and website name */
+}
+
+.website-name {
+    /* Adjust the font size */
+    font-weight: bold;
+    color: #6a0e31;
+    /* Adjust the color */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #6a0e31;
+}
+
+/* Active state for navbar links */
+.nav-links a.active {
+    font-weight: bold;
+    color: #6a0e31;
+    text-decoration: underline;
+}
+
+.nav-buttons {
+    display: flex; /* Ensure buttons are aligned horizontally */
+    gap: 10px; /* Add spacing between buttons */
+}
+
+.nav-buttons a {
+    text-decoration: none; /* Remove underline for links wrapping buttons */
+}
+
+/* Navbar Profile Section */
+.nav-profile {
+    display: none; /* Hidden by default */
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    color: #6a0e31;
+}
+
+/* Profile Container */
+.profile-container {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Horizontally center content */
+    justify-content: center; /* Vertically center content */
+    width: 80%; /* Adjust width to create some space */
+    max-width: 800px; /* Limit maximum width */
+    margin: 20px auto; /* Center the container in the middle */
+}
+
+.profile-details p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    padding: 10px;
+    text-align: left; /* Keep text aligned to the left */
+}
+
+.profile-details strong {
+    font-weight: bold;
+}
+
+/* Booking and Membership Section */
+#booking-list,
+#membership-details {
+    margin-top: 20px;
+}
+
+#booking-list li,
+#membership-details p {
+    font-size: 1rem;
+    margin: 8px 0;
+    padding: 10px;
+    text-align: left; /* Keep text aligned to the left */
+}
+
+#membership-details p {
+    font-weight: bold;
+}
+
+#membership-details span {
+    font-weight: normal;
+}
+
+/* Update Profile Form */
+#update-profile-form {
+    margin-top: 20px;
+    width: 100%; /* Ensure form stretches across the container */
+    max-width: 400px; /* Limit form width */
+}
+
+#update-profile-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#update-profile-form input {
+    padding: 8px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Facilities */
+.view-fields button {
+    text-align: center;
+}
+
+/* Centering the Button */
+.view_fields {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: beige;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 400px;
+    height: 300px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+}
+
+.hero-content {
+    text-align: left;
+}
+
+.hero-content h1 {
+    margin-bottom: 20px;
+}
+
+.fields {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f2f1f1;
+}
+
+.fields h1 {
+    font-size: 2.8rem;
+    color: #6a0e31;
+    margin-bottom: 2rem;
+}
+
+.fields .field-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid #6a0e31;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: beige;
+    max-width: 1000px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.field-card .field-image {
+    width: 100%;
+    max-width: 400px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.fields .field-info {
+    flex: 1;
+    text-align: left;
+}
+
+.fields .field-info h2 {
+    font-size: 1.5rem;
+    color: #6a0e31;
+    margin-bottom: 0.5rem;
+}
+
+.fields .field-info p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.fields .fields-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+/* Footer container */
+.footer {
+    margin-top: auto;
+    background-color: #6a0e31;
+    color: beige;
+    text-align: center;
+    padding: 30px 20px; /* Increase padding for spacing */
+}
+
+/* Footer text */
+.footer p {
+    margin: 0;
+    font-weight: 500;
+}
+
+/* Footer links */
+.footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* More flexible than margin */
+    flex-wrap: wrap;
+}
+
+/* Footer links styling */
+.footer-links a {
+    color: beige;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+/* Footer links hover effect */
+.footer-links a:hover {
+    text-decoration: underline;
+    transform: scale(1.05);
+}
+
+/* Membership Plan Section */
+.memberships h1 {
+    text-align: center;
+    color: #6a0e31;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.membership-plan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: beige;
+    border: 1px solid #6a0e31;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Ensures all cards are uniform */
+}
+
+.membership-plan img {
+    width: 150px; /* Uniform image width */
+    height: 150px; /* Uniform image height */
+    object-fit: cover; /* Ensures images are cropped uniformly */
+    border-radius: 10px;
+}
+
+.membership-plan .details {
+    flex: 1;
+    margin-left: 20px;
+    color: #333;
+}
+
+.membership-plan h2 {
+    color: #6a0e31;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.membership-plan p {
+    margin: 5px 0;
+}
+
+.membership-plan ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.membership-plan ul li {
+    margin-bottom: 5px;
+}
+
+/* Trainers Section */
+.trainers {
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px 0;
+    background-color: #f3f1f1;
+    width: 100%;
+}
+
+.trainers h1 {
+    text-align: center;
+    color: #6a0e31;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.trainers .trainer-container {
+    display: flex;
+    justify-content: center;
+    /* Centers the trainer cards horizontally */
+    gap: 20px;
+    /* Adds spacing between trainer cards */
+    flex-wrap: wrap;
+    /* Ensures responsiveness by wrapping on smaller screens */
+}
+
+.trainers .trainer-card {
+    width: 300px; /* Set a uniform width for all trainer cards */
+    text-align: center;
+    background-color: beige;
+    border: 1px solid #6a0e31;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trainers .trainer-card img {
+    width: 150px; /* Uniform width for images */
+    height: 150px; /* Uniform height for images */
+    object-fit: cover; /* Ensures uniform cropping */
+    border-radius: 50%; /* Circular images for trainers */
+    margin-bottom: 10px;
+}
+
+.trainers .trainer-card h3 {
+    color: #6a0e31;
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
+.trainers .trainer-card p {
+    margin-bottom: 10px;
+}
+
+.trainers .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 10px 0;
+}
+
+.trainers .social-icons a {
+    font-size: 1.5rem;
+    color: #6a0e31;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+/* Form container */
+form {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form labels */
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Form inputs and select dropdowns */
+form input,
+form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease;
+}
+
+/* Focused input styling */
+form input:focus,
+form select:focus {
+    outline: none;
+    border-color: #6a0e31;
+    background-color: #fff;
+}
+
+/* Required and invalid fields */
+form input:required {
+    border-left: 3px solid #6a0e31;
+}
+
+form input:invalid {
+    border-left: 3px solid red;
+}
+
+/* Placeholder styling */
+form input::placeholder {
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+/* Form Button Styling */
+form button {
+    width: 100%;
+}
+
+#next-btn {
+    background-color: #1E90FF; /* Blue color */
+    margin-top: 20px;
+}
+
+#next-btn:hover {
+    background-color: #5dade2; /* Lighter blue on hover */
+}
+
+#next-btn:disabled {
+    background-color: #d3d3d3; /* Gray color when disabled */
+    cursor: not-allowed; /* Disabled state */
+}
+
+
+/* Error messages */
+.form-error {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: -15px;
+    margin-bottom: 15px;
+}
+
+/* Redirect link under forms */
+.form-redirect {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.form-redirect a {
+    color: #6a0e31;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.form-redirect a:hover {
+    color: #861a43;
+}
+
+/* Contact Us Section */
+/* Container */
+.container {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Title and Description */
+.help-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin: 20px 0;
+}
+
+.help-description {
+    color: #666;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Contact Section */
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.contact-option {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #ffffff;
+    padding: 15px 20px;
+    border-radius: 25px;
+    width: 100%;
+    max-width: 500px; /* Adjusted to prevent too wide a layout */
+    justify-content: flex-start;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: "Poppins", sans-serif;
+}
+
+.contact-icon {
+    font-size: 1.5rem;
+    color: #4a0b26; /* Icon color */
+}
+
+.contact-option p {
+    color: #333; /* Ensure the text is readable */
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+/* Feedback Section */
+.feedback-section {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+
+.feedback-section h3 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.feedback-section label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+    color: #333;
+}
+
+.feedback-section input,
+.feedback-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+}
+
+.feedback-section textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+/* payment-info */
+/* Payment Container */
+.payment-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.page-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Payment Wrapper */
+.payment-wrapper {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* Left Section: PromptPay QR */
+.payment-left {
+    flex: 1;
+    border: 1px solid #7a1b45;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.payment-left .section-title {
+    font-size: 1.5rem;
+    color: #7a1b45;
+    margin-bottom: 10px;
+}
+
+.instructions {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.promptpay-logo img {
+    width: 150px;
+    margin: 10px 0;
+}
+
+.qr-container img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 15px;
+}
+
+.extra-info {
+    margin: 20px;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* Right Section: Transaction Details */
+.payment-right {
+    flex: 1;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+}
+
+.payment-right .section-title {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.amount {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #7a1b45;
+    margin-bottom: 20px;
+}
+
+.transaction-details {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+
+.transaction-details td {
+    padding: 8px;
+    font-size: 0.9rem;
+    color: #555;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.transaction-details td:first-child {
+    font-weight: bold;
+    color: #333;
+}
+
+.back-btn {
+    width: 100%;
+}
+
+/* About Section */
+.about {
+    padding: 40px 20px;
+    color: #333;
+    text-align: center;
+}
+
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about p {
+    font-size: 1.2rem;
+    line-height: 2;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+/* schedule container */
+.schedule-container {
+    text-align: center;
+    margin: 30px auto;
+    padding: 40px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    max-width: 1200px; /* Increased width for the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* schedule table */
+.schedule {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+.schedule th {
+    background-color: #6a0e31;
+    color: white;
+    font-size: 1.2rem; /* Increased header font size */
+}
+
+.schedule tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light gray for even rows */
+}
+
+.schedule tr:nth-child(odd) {
+    background-color: #ffffff; /* White for odd rows */
+}
+
+/* schedule header and cell styling */
+.schedule th, .schedule td {
+    padding: 20px 30px; /* Increased padding for better spacing */
+    text-align: center; /* Center-align text */
+    border: 1px solid #ddd; /* Add borders around cells */
+}
+
+/* Day column styling (left-most column) */
+.schedule td:first-child {
+    font-weight: bold;
+    color: #6a0e31; /* Highlight day names */
+    text-align: left; /* Align day names to the left */
+    padding-left: 40px; /* Extra padding for readability */
+}
+
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Active Heaven - Sports Facility Booking</title>
+    <link rel="stylesheet" href="style_index.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="../images/Logo.png" alt="Active Heaven Logo" class="logo" />
+            <span class="website-name">Active Heaven</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#facilities">Facilities</a></li>
+            <li><a href="memberships.html">Memberships</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Booking Form -->
+    <h1>Booking Form</h1>
+
+    <form id="booking-form" method="POST">
+        <!-- Customer Name -->
+        <div>
+            <label for="customer_name">Name</label>
+            <input type="text" id="customer_name" name="name" placeholder="e.g John" required readonly />
+        </div>
+
+        <!-- Field Name (Dynamically filled) -->
+        <div>
+            <label for="field-name">Field Name</label>
+            <input type="text" id="field-name" name="field_name" required readonly />
+        </div>
+
+        <!-- Field Location -->
+        <div>
+            <label for="field-location">Field Location</label>
+            <input type="text" id="field-location" name="field_location" required readonly />
+        </div>
+
+        <!-- Field Type -->
+        <div>
+            <label for="field-type">Field Type</label>
+            <input type="text" id="field-type" name="field_type" required readonly />
+        </div>
+
+        <!-- Date -->
+        <div>
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date" required />
+        </div>
+
+        <!-- Duration -->
+        <div>
+            <label for="duration">Duration (hours)</label>
+            <select id="duration" name="duration" required>
+                <option value="1">1 hour</option>
+                <option value="2">2 hours</option>
+                <option value="3">3 hours</option>
+                <option value="4">4 hours</option>
+            </select>
+        </div>
+
+        <!-- Submit Button -->
+        <div>
+            <button type="submit">Book Now</button>
+            <!-- Next Button (Initially Disabled) -->
+            <button id="next-btn" type="button" disabled>Next</button>
+        </div>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
