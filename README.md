@@ -190,13 +190,8 @@ Copy the SQL command from inside backend folder [finalproj_sec544_group4.sql](ht
 
 ## 👨‍💻 About Us
 
-👋 **Hello, I'm Kaung Khant Lin aka Kino!**  
+👋 **Hello, I'm Thit Lwin Win Thant aka John!**  
 We are **Computer Science students at Assumption University of Thailand** with a passion for **frontend, backend development, and database management**. This project is part of our learning journey, applying **Express.js, PostgreSQL, and JWT authentication**.
-
-🔗 **Connect with me:**
-- GitHub: [@Kinosaur](https://github.com/Kinosaur)
-- LinkedIn: [Kaung Khant Lin](https://www.linkedin.com/in/kaung-khant-lin-33a477274/)
-- Email: kaungkhantlin999@gmail.com
 
 ---
 
